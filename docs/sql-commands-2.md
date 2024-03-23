@@ -59,3 +59,21 @@ You can narrow down queries by returning only those where a certain expression i
 SELECT column_name FROM table_name WHERE column_name operator value
 ```
 
+SELECT \* FROM testtb WHERE name=‘John’;
+
+
+
+<mark style="background-color:blue;">NOTE - make sure to use the single quotes around text values when working with strings.</mark>
+
+Here is another example. Let’s say that we want to select all rows where the year column is greater than 1980:
+
+
+
+SELECT \* FROM testtb WHERE year>1980;
+
+
+
+Remove a row
+
+
+
