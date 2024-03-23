@@ -2,37 +2,47 @@
 
 #### CRUD Operations in MySQL
 
-CRUD stands for Create, Read, Update, and Delete. These operations are fundamental for interacting with databases, such as MySQL. Below is a brief explanation of each operation in the context of MySQL.
+CRUD stands for Create, Read, Update, and Delete.&#x20;
 
-**Create**
+Below is a brief explanation of each operation in the context of MySQL.
 
-* To insert data into a database, you use the `INSERT` statement.
-*   ```sql
-    INSERT INTO table_name (column1, column2) VALUES (value1, value2);
-    ```
+<mark style="color:red;background-color:yellow;">**Create**</mark>
 
-    **Read**
+To insert data into a database, you use the `INSERT` statement.
 
-    * To query or read data from a database, you use the `SELECT` statement.
-    *   ```sql
-        SELECT column1, column2 FROM table_name WHERE condition;
-        ```
+```sql
+INSERT INTO table_name (column1, column2) VALUES (value1, value2);
+```
 
-        **Update**
+<mark style="color:red;background-color:yellow;">**Read**</mark>
 
-        * To modify existing data within a table, you use the `UPDATE` statement.
-        *   ```sql
-            UPDATE table_name SET column1 = value1, column2 = value2 WHERE condition;
-            ```
+To query or read data from a database, you use the `SELECT` statement.
 
-            **Delete**
+```sql
+SELECT column1, column2 FROM table_name WHERE condition;
+```
 
-            * To remove data from a table, you use the `DELETE` statement.
-            * ```sql
-              DELETE FROM table_name WHERE condition;
-              ```
+<mark style="color:red;background-color:yellow;">**Update**</mark>
+
+To modify existing data within a table, you use the `UPDATE` statement.
+
+```sql
+ UPDATE table_name SET column1 = value1, column2 = value2 WHERE condition;
+```
+
+<mark style="color:red;background-color:yellow;">**Delete**</mark>
+
+To remove data from a table, you use the `DELETE` statement.
+
+```sql
+DELETE FROM table_name WHERE condition;
+```
 
 For example the table below has the following schema: `id` (unique identifier), `title`, `author`, and `year_published`.
+
+
+
+<mark style="color:orange;">**EXAMPLES**</mark>
 
 **Create**
 
