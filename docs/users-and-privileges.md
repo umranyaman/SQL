@@ -49,3 +49,29 @@ GRANT INSERT ON sales.orders TO 'username'@'localhost';
 ```
 
 This narrows down the privileges to a specific action on a specific table, providing fine-grained control over database access.
+
+#### Granting Multiple Privileges
+
+To grant more than one privilege at the same time, you can list them separated by commas. For instance, if you'd like a user to be able to select from and insert into the `customers` table in the `sales` database, the command would look like this:
+
+```sql
+GRANT SELECT, INSERT ON sales.customers TO 'username'@'localhost';
+```
+
+#### Revoking Privileges
+
+If you need to remove a user's privileges, you can use the `REVOKE` command. For example, to revoke the insert privilege from the `orders` table in the `sales` database from a user:
+
+```sql
+REVOKE INSERT ON sales.orders FROM 'username'@'localhost';
+```
+
+#### Viewing Granted Privileges
+
+To view what privileges have been granted to a particular user, you can use the `SHOW GRANTS` command:
+
+```sql
+SHOW GRANTS FOR 'username'@'localhost';
+```
+
+This will list all privileges the specified user has.
