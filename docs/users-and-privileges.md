@@ -10,6 +10,12 @@ CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';
 
 Replace `username` with the name of the user you want to create, and `password` with the user's password.
 
+To verify the creation of the user and their privileges, you can retrieve the list of users from the `mysql.user` table. Execute the following command:
+
+```sql
+SELECT user FROM mysql.user;
+```
+
 #### Granting Privileges
 
 After creating a user, you need to grant them privileges so they can perform operations. Use the GRANT statement:
