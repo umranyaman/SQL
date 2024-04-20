@@ -11,3 +11,5 @@
 * [Advanced Usage -2](advanced-usage-2.md)
 * [Aggregate Functions](aggregate-functions.md)
 * [AS - Union](as-union.md)
+* [Users and Privileges](users-and-privileges.md)
+* [Procedure and Testing](procedure-and-testing.md)
